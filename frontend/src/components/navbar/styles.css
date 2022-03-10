@@ -5,11 +5,15 @@ header {
     align-items: center;
 }
 
+.container{
+    max-width: 100%;
+}
+
 .thufootball-nav-content {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    color: #fff;
+    color: var(--color-btn-nav);
 }
 
 .thufootball-nav-content h1 {
@@ -29,4 +33,14 @@ header {
 .thufootball-contact-link {
     margin: 0 0 0 10px;
     font-size: 12px;
+}
+
+.form-control {
+    margin: 0 10px 0 0;
+    
+}
+.btn{
+    display: flex;
+    margin: 0 10px 0 0;
+    color: var(--color-btn-nav);
 }

@@ -14,11 +14,10 @@ function Navbar(){
                         </div>
                     </a>
                     <h1>Thursday Football</h1>
-                    <form className="form-inline">
+                    <form className="thufootball-form-inline">
                         <input className="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Search"/>
                         <button className="btn btn-outline-success my-2 my-sm-0" type="button">Buscar</button>
                     </form>
-
                 </div>
             </nav>
         </header>

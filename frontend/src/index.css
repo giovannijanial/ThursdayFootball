@@ -2,6 +2,8 @@
 
 :root {
   --color-primary: #005829;
+  --color-btn-nav: #e5e5e5;
+  --color-btn-hoover:#198754;
 }
 
 * {
