@@ -1,0 +1,32 @@
+header {
+    height: 60px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+}
+
+.thufootball-nav-content {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: #fff;
+}
+
+.thufootball-nav-content h1 {
+    font-size: 25px;
+    margin: 0;
+    font-weight: 700;
+}
+.thufootball-nav-content form {
+    display: flex;
+}
+
+.thufootball-contact-container {
+    display: flex;
+    align-items: center;
+}
+
+.thufootball-contact-link {
+    margin: 0 0 0 10px;
+    font-size: 12px;
+}
