@@ -6,10 +6,10 @@ function MovieCard() {
 
     const movie = {
         id: 1,
-        image: "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
-        title: "The Witcher",
-        count: 2,
-        score: 4.5
+        image: "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/l9myeK0Fkr6faSoTlOnx9sogJ4l.jpg",
+        title: "Jogo de Quinta-Feira 10/03/2022",
+        count: 18,
+        score: 9.5
     };
 
     return (

@@ -5,7 +5,7 @@ function Navbar(){
 
     return (
         <header>
-            <nav className="container">
+            <nav className="container ms-5">
                 <div className="thufootball-nav-content">
                     <a href="https://github.com/giovannijanial" target="_blank" rel="noreferrer">
                         <div className="thufootball-contact-container">

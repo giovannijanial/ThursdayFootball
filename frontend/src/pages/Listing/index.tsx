@@ -4,9 +4,8 @@ import Pagination from "components/pagination";
 
 function Listing() {
     return (
-        <>
-            <Pagination />
-            <div className="container">
+        <div id="id">
+            <div className="container mt-3">
                 <div className="row">
                     <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
                         <MovieCard />
@@ -31,7 +30,8 @@ function Listing() {
                     </div>
                 </div>
             </div>
-        </>
+            <Pagination />
+        </div>
     );
 }
 export default Listing;
