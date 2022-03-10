@@ -50,7 +50,7 @@
     min-height: 40px;
 }
 .thufootball-btn:hover{
-    background-color: var(--color-btn-hoover);
+    background-color: var(--color-btn-hover);
     color: #fff;
 
 }
