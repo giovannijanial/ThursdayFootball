@@ -1,43 +1,36 @@
-package com.devjanial.thufootball.entities;
+package com.devjanial.thufootball.dto;
 
-import java.util.HashSet;
-import java.util.Set;
+import com.devjanial.thufootball.entities.Game;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+//CAMADA DE COMUNICAÇÃO ENTRE SERVICES E O CONTROLADOR
+public class GameDTO {
 
-@Entity
-@Table(name="tb_game")
-public class Game {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String title;
 	private Double score;
 	private Integer count;
 	private String image;
 	
-	@OneToMany(mappedBy="id.game") //acessa todas as avaliações do game 
-	private Set<Score> scores = new HashSet<>();
-	
-	public Game() {
+	public GameDTO() {
 		
 	}
 
-	public Game(Long id, String title, Double score, Integer count, String image) {
+	public GameDTO(Long id, String title, Double score, Integer count, String image) {
 		this.id = id;
 		this.title = title;
 		this.score = score;
 		this.count = count;
 		this.image = image;
 	}
-
-
+	
+	//Construtor que recebe as entities
+	public GameDTO(Game game) {
+		id = game.getId();
+		title = game.getTitle();
+		score = game.getScore();
+		count = game.getCount();
+		image = game.getImage();
+	}
 
 	public Long getId() {
 		return id;
@@ -78,12 +71,9 @@ public class Game {
 	public void setImage(String image) {
 		this.image = image;
 	}
-
-	public Set<Score> getScores() {
-		return scores;
-	}
-	
 	
 	
 	
 }
+
+
